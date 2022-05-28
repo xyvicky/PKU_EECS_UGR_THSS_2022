@@ -13,26 +13,20 @@
 \fi
 
 \makeatletter
-\def\emptypage@emptypage{%
-    \hbox{}%
-     \vspace*{\fill}
-     \begin{center}
-        % 打印前请去除documentclass的screen选项，去除后将不再显示此文字
-        \ifscreen{\small（此页为空白页）}\fi
-     \end{center}
-     \vspace{\fill}
-     \newpage%
-}%
-\def\cleardoublepage{%
-        \clearpage%
-        \if@twoside%
-            \ifodd\c@page%
-                % do nothing
-            \else%
-                \emptypage@emptypage%
-            \fi%
-        \fi%
-    }%
+\def\cleardoublepage{
+    \clearpage
+    \ifscreen
+        % do nothing
+    \else
+        \ifodd\c@page
+            % do nothing
+        \else
+            \newpage
+            \phantom{x} % one more empty page
+            \clearpage
+        \fi
+    \fi
+}
 \makeatother
 
 \usepackage{url}
