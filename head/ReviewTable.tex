@@ -19,9 +19,17 @@
     \hline
     \multicolumn{6}{|c|}{导师评语} \\
     \multicolumn{6}{|c|}{\advisorComment{}} \\
-    \multicolumn{6}{|r|}{导师签名：\hspace{6em}　\hspace{3em}　} \\
+    \multicolumn{6}{|r|}{
+        导师签名：
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,yshift=-1em] at (0,0) {
+                \includegraphics[height=2em]{figures/sign-advisor}
+            };
+        \end{tikzpicture}
+        \hspace{8em}　
+    } \\
     \multicolumn{6}{|c|}{} \\
-    \multicolumn{6}{|r|}{\hspace{4em}年\hspace{2em}月\hspace{2em}日\hspace{3em}　} \\
+    \multicolumn{6}{|r|}{\reviewDate{}\hspace{2em}　} \\
     \multicolumn{6}{|c|}{} \\
     \hline
     \end{tabular}

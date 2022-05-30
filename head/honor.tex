@@ -9,9 +9,16 @@
 \bigskip
 
 \begin{flushright}
-    论文作者签名：\hspace{10em}　\\
+    论文作者签名：
+    \begin{tikzpicture}[overlay]
+        \node[anchor=south west,yshift=-1em] at (0,0) {
+            \includegraphics[height=2em]{figures/sign-author}
+        };
+    \end{tikzpicture}
+    \hspace{10em}　
+    \\
     \vspace{1em}
-    日期：\hspace{4em}年\hspace{2em}月\hspace{2em}日
+    日期：\honorDate{}
 \end{flushright}
 
 \bigskip
@@ -32,7 +39,21 @@
 \bigskip
 
 \begin{flushright}
-    论文作者签名：\hspace{5em}　导师签名：\hspace{5em}　\\
+    论文作者签名：
+    \begin{tikzpicture}[overlay]
+        \node[anchor=south west,yshift=-1em] at (0,0) {
+            \includegraphics[height=2em]{figures/sign-author}
+        };
+    \end{tikzpicture}
+    \hspace{6em}　
+    导师签名：
+    \begin{tikzpicture}[overlay]
+        \node[anchor=south west,yshift=-1em] at (0,0) {
+            \includegraphics[height=2em]{figures/sign-advisor}
+        };
+    \end{tikzpicture}
+    \hspace{6em}　
+    
     \vspace{1em}
-    日期：\hspace{4em}年\hspace{2em}月\hspace{2em}日\hspace{5em}　
+    日期：\honorDate{}\hspace{5em}　
 \end{flushright}
