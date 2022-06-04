@@ -1,26 +1,33 @@
 \chapter*{\bfseries 摘要}
 
-壹壹肆伍壹肆是一个重大问题。壹壹肆伍壹肆是一个重大问题。壹壹肆伍壹肆是一个重大问题。壹壹肆伍壹肆是一个重大问题。壹壹肆伍壹肆是一个重大问题。
+理解重复拍卖中学习算法的收敛性质是拍卖中的学习算法领域中的重要问题，并拥有广泛的应用场景，例如在线广告拍卖的场景。此文将聚焦于重复首价拍卖的场景，其中竞价者拥有不随时间改变的对物品的估值并通过基于均值的学习算法（mean-based learning algorithm）进行每一轮的报价。基于均值的学习算法包括一大类著名的无悔学习算法（no-regret learning algorithm），例如Multiplicative Weights Update和Follow the Perturbed Leader。我们完整刻画了这类基于均值的学习算法在我们的首价拍卖场景中的两种纳什收敛性，分别是（1）“时间平均纳什收敛”：竞价者采取单轮纳什均衡策略组合的轮数占总轮数的比例趋于1；（2）“末轮策略纳什收敛”：竞价者的策略组合趋于单轮纳什均衡。特别地，我们的结果将根据拥有相同最高估值的竞价者人数情况分为三类讨论：
+\begin{itemize}
+    \item 如果此人数至少有3人，竞价演化将几乎必然（almost surely）“时间平均纳什收敛”和“末轮策略纳什收敛”；
+    \item 如果此人数有且仅有2人，竞价演化将几乎必然“时间平均纳什收敛”，但可能不“末轮策略纳什收敛”；
+    \item 如果此人数有且仅有1人，竞价演化既可能不“时间平均纳什收敛”又可能不“末轮策略纳什收敛”。
+\end{itemize}
+此项研究的发现为学习算法收敛性的研究打开了新的思路。
 
-本文壹玖壹玖捌壹零。本文壹玖壹玖捌壹零。本文壹玖壹玖捌壹零。本文壹玖壹玖捌壹零。本文壹玖壹玖捌壹零。本文壹玖壹玖捌壹零。本文壹玖壹玖捌壹零。
 
 \bigskip
 \bigskip
 
-关键词: 壹壹肆，伍壹肆
+关键词：重复首价拍卖，基于均值的学习算法，纳什均衡，收敛
 
 \chapter*{\bfseries ABSTRACT}
 
 %{\parindent0pt
 
-One one four five one four. One one four five one four. One one four five one four. One one four five one four. One one four five one four.
-
-One one four five one four. One one four five one four.
-
-Money is all you need. Money is all you need. Money is all you need. Money is all you need. Money is all you need. Money is all you need.
+Understanding the convergence properties of learning dynamics in repeated auctions is a timely and important question in the area of learning in auctions, with numerous applications in, e.g., online advertising markets. This work focuses on repeated first price auctions where bidders with fixed values for the item learn to bid using mean-based algorithms -- a large class of online learning algorithms that include popular no-regret algorithms such as Multiplicative Weights Update and Follow the Perturbed Leader. We completely characterize the learning dynamics of mean-based algorithms, in terms of convergence to a Nash equilibrium of the auction, in two senses: (1) \emph{time-average}: the fraction of rounds where bidders play a Nash equilibrium approaches 1 in the limit; (2) \emph{last-iterate}: the mixed strategy profile of bidders approaches a Nash equilibrium in the limit. Specifically, the results depend on the number of bidders with the highest value:
+\begin{itemize}
+    \item If the number is at least three, the bidding dynamics almost surely converges to a Nash equilibrium of the auction, both in time-average and in last-iterate.  
+    \item If the number is two, the bidding dynamics almost surely converges to a Nash equilibrium in time-average but not necessarily in last-iterate.
+    \item If the number is one, the bidding dynamics may not converge to a Nash equilibrium in time-average nor in last-iterate. 
+\end{itemize}
+Our discovery opens up new possibilities in the study of convergence dynamics of learning algorithms.
 
 \bigskip
 \bigskip
 
-KEY WORDS: Foo, Bar
+KEY WORDS: Repeated first price auction, Mean-based learning algorithm, Nash equilibrium, Convergence
 %}
